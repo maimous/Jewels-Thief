@@ -9,7 +9,7 @@ namespace Jewels_Thief
     class JewelThief : Locksmith
     {
         private Jewels stolenJewels = null;
-        new public void ReturnContents(Jewels safeContents, Owner owner)
+        override public void ReturnContents(Jewels safeContents, Owner owner)
         {
             stolenJewels = safeContents;
             Console.WriteLine("I'm stealing the contents! " + stolenJewels.Sparkle());

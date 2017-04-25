@@ -19,7 +19,7 @@ namespace Jewels_Thief
         {
             writtenDownCombination = combination;
         }
-        public void ReturnContents(Jewels safeContents, Owner owner)
+        virtual public void ReturnContents(Jewels safeContents, Owner owner)
         {
             owner.ReceiveContents(safeContents);
         }
